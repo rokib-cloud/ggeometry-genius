@@ -7,3 +7,17 @@ document.getElementById('btn-triangle').addEventListener('click', function () {
     const triangleArea = document.getElementById('triangle-area');
     triangleArea.innerText = result;
 })
+
+document.getElementById('btn-rectangle').addEventListener('click', function () {
+    const inputWidth = document.getElementById('width').value;
+    const widthText = parseFloat(inputWidth);
+    const inputLength = document.getElementById('length').value;
+    const lengthText = parseFloat(inputLength);
+    const result = widthText * lengthText;
+    const rectangleArea = document.getElementById('rectangle-area');
+    rectangleArea.innerText = result
+})
+
+const nameOfOrganization = document.getElementById("name").value;
+
+console.log(nameOfOrganization);
